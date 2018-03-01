@@ -13,6 +13,7 @@ cd libft
 
 This library contains a makefile, with the following options:
 
+| --- | --- |
 | `make` | creates .o files for each function as well as the main library file, libft.a |
 | `make libft.a` | same as make |
 | `make clean` | removes the .o files used to create the library |
