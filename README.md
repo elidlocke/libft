@@ -1,6 +1,6 @@
 # Libft
 
-My implementation of some of the functions that are in Libft, a standard C library.
+An implementation of some of the useful standard functions in C. Done as an educational project at [42USA](https://www.42.us.org/).
 
 ## Using this Library
 
@@ -43,7 +43,7 @@ Note that -L takes the path to your library and -l takes the set of characters t
 
 ## Functions
 
-###Part 1
+### Part 1
 
 _Functions that are directly included in libc_
 
@@ -78,7 +78,7 @@ _Functions that are directly included in libc_
 | **ft\_toupper()** | The ft\_toupper() function converts a lower-case letter to the corresponding upper-case letter.  The argument must be representable as an unsigned char or the value of EOF. If the argument is a lower-case letter, the ft\_toupper() function returns the corresponding upper-case letter if there is one; otherwise, the argument is returned unchanged.|
 | **ft\_tolower()** | The ft\_tolower() function converts an upper-case letter to the correspond-ing lower-case letter.  The argument must be representable as an unsigned char or the value of EOF.|
 
-###Part 2
+### Part 2
 
 _Additional functions that are not in libc, but are required by the assignment._
 
@@ -109,7 +109,7 @@ _Additional functions that are not in libc, but are required by the assignment._
 | **ft\_putnbr_fd()** | The ft\_putnbr\_fd() function outputs a number to the output specified by the file descriptor. A file descriptor of 0, 1, or 2, refers to the standard input, standard output, or standard error, respectively.|
 
 
-###Part 3
+### Part 3
 
 _Optional: creation and manipulation of linked lists_
 
@@ -121,7 +121,7 @@ _Optional: creation and manipulation of linked lists_
 | **ft\_lstadd()** | The ft\_lstadd() function adds the element new at the beginning of the list alst.|
 | **ft\_lstiter()** | The ft\_lstiter() function iterates through a list and applies the function f to each link in the list.|
 
-####Part 4
+#### Part 4
 _Bonus: functions that I find useful that were not included in the assignment._
 
 | Function | Description |
