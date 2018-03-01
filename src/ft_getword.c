@@ -6,16 +6,16 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/27 14:45:40 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/27 17:15:08 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/01 10:48:07 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** The ft_getword() function takes a string and a delimeter and returns a
+** The ft_getword() function takes a string and a delimiter and returns a
 ** string with the letters between the start point of the string and the next
-** delimeter.
+** delimiter.
 */
 
 char	*ft_getword(const char *s, char delim)

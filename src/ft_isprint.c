@@ -6,12 +6,12 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/20 08:40:54 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/21 19:06:59 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/01 08:45:02 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** The isprint() function tests for any printing character, including space
+** The ft_isprint() function tests for any printing character, including space
 ** (' ').  The value of the argument must be representable as an unsigned char
 ** or the value of EOF.
 */

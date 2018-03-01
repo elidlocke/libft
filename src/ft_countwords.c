@@ -6,13 +6,13 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/27 13:46:41 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/27 16:35:57 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/01 10:47:11 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** The function ft_countwords() takes a string and a delimeter and counts the
-** number of words between the delimeters.
+** The function ft_countwords() takes a string and a delimiter and counts the
+** number of words between the delimiters.
 */
 
 int	ft_countwords(const char *str, char delim)

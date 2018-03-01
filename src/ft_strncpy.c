@@ -6,13 +6,14 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/22 08:51:53 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/22 09:44:46 by enennige         ###   ########.fr       */
+/*   Updated: 2018/02/28 21:49:21 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** The strncpy() function copies the string src to dst (including
-** the terminating `\0' character.)
+** The ft_strncpy() function copies at most len characters from src into dst.
+** If src is less than len characters long, the remainder of dst is filled
+** with `\0' characters.
 */
 
 #include "libft.h"

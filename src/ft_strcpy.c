@@ -6,12 +6,12 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/20 14:32:13 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/22 12:12:09 by enennige         ###   ########.fr       */
+/*   Updated: 2018/02/28 21:46:15 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** The strcpy() function copies the string src to dst (including
+** The ft_strcpy() function copies the string src to dst (including
 ** the terminating `\0' character.)
 */
 

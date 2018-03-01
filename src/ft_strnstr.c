@@ -6,9 +6,11 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/21 10:15:13 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/27 17:22:34 by enennige         ###   ########.fr       */
+/*   Updated: 2018/02/28 22:04:54 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 ** The ft_strnstr() function locates the first occurrence of the null
@@ -18,8 +20,6 @@
 ** occurs nowhere in haystack, NULL is returned; otherwise a pointer to the
 ** first character of the first occurrence of needle is returned.
 */
-
-#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

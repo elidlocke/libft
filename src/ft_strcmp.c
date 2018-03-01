@@ -6,9 +6,17 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/21 10:39:32 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/21 13:41:52 by enennige         ###   ########.fr       */
+/*   Updated: 2018/02/28 22:08:39 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** The ft_strcmp() function lexicographically compares the null-terminated
+** strings s1 and s2. Returns an integer greater than, equal to, or less than
+** 0, according as the string s1 is greater than,equal to, or less than the
+** string s2.  The comparison is done using unsigned characters, so that
+** '\200' is greater than '\0'.
+*/
 
 int	ft_strcmp(const char *s1, const char *s2)
 {

@@ -6,7 +6,7 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 18:36:03 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/27 18:31:11 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/01 10:28:37 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static	void	ft_skipdelimeters(char **s, char c)
 /*
 ** The ft_strsplit() function allocates with malloc(3) and returns an array of
 ** fresh strings (all ending with '\0' including the array itself) obtained by
-** splitting s using the character c as a delimeter. If the allocation fails,
+** splitting s using the character c as a delimiter. If the allocation fails,
 ** the function returns NULL.
 */
 

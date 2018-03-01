@@ -6,13 +6,13 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/27 15:20:09 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/27 17:03:07 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/01 10:49:06 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** The ft_gotonextword() function takes a pointer to a string and moves the
-** pointer forward to the next point that is past the next delimeter. if
+** pointer forward to the next point that is past the next delimiter. if
 ** there is no more words in the string, the pointer is moved to the end
 ** of the string.
 */
