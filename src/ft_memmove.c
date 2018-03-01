@@ -6,7 +6,7 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/22 19:15:04 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/28 21:35:49 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/01 12:19:18 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,20 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char str[len];
+	int i;
 
-	ft_memcpy(str, src, len);
-	ft_memcpy(dst, str, len);
+	if (dst > src)
+	{
+		i = (int)len - 1;
+		while (i >= 0)
+		{
+			((char *)dst)[i] = ((char *)src)[i];
+			i--;
+		}
+	}
+	else
+	{
+		ft_memcpy(dst, src, len);
+	}
 	return (dst);
 }
