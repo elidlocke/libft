@@ -1,6 +1,6 @@
 # Libft
 
-An implementation of some of the useful standard functions in C. Done as an educational project at [42USA](https://www.42.us.org/).
+An implementation of some of the standard functions in C. Done as an educational project at [42USA](https://www.42.us.org/).
 
 ## Using this Library
 
