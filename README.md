@@ -34,7 +34,7 @@ You should see a new libft.a file. Now you can use it anywhere by including the 
 include "libft.h"
 ```
 
-don't forget to tell gcc what the path to your library is when you compile a file that is using it.  For example:
+Don't forget to tell gcc what the path to your library is when you compile a file that is using it.  For example:
 
 ```
 gcc some_c_file.c -L/path_to_library_file/ -l/ft/
@@ -134,7 +134,16 @@ _Bonus: functions that I find useful that were not included in the assignment._
 | **ft\_gotonextword()** | The ft\_gotonextword() function takes a pointer to a string and moves the pointer forward to the next point that is past the next delimiter. if there is no more words in the string, the pointer is moved to the end of the string.|
 | **ft\_printlst()** | The function ft\_printlst() takes a linked list and prints the parameter content from each link in the list, assuming that the content is a string. Each parameter is followed by a newline.|
 
+## Credit
+
+Thanks to the following testing frameworks for helping me pass all the tests:
+- [Moulibft](https://www.moulibft.com/)
+- [Libft Unit Test](https://github.com/alelievr/libft-unit-test)
+- [Maintest](https://github.com/QuentinPerez/Maintest)
+- [42 File Checker](https://github.com/jgigault/42FileChecker)
+
 ## Disclaimer
 
 This is a project that was done for learning purposes only. This is not meant to be used as a replacement for the [GNU C Library](https://www.gnu.org/software/libc/).
 
+If you are currently a 42 Student, feel free to look at my functions, but watch out for file structure. I cleaned up the file structure with a src and includes folder after the assignment was graded.
