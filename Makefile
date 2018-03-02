@@ -6,12 +6,12 @@
 #    By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/21 17:45:07 by enennige          #+#    #+#              #
-#    Updated: 2018/03/02 09:17:28 by enennige         ###   ########.fr        #
+#    Updated: 2018/03/02 09:43:03 by enennige         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	libft.a
-SRC			=	ft_memset.c \
+SRC_PATH	=	./src/
+SRC_NAME	=	ft_memset.c \
 				ft_bzero.c \
 				ft_memcpy.c \
 				ft_memccpy.c \
@@ -76,21 +76,23 @@ SRC			=	ft_memset.c \
 				ft_getword.c \
 				ft_gotonextword.c \
 				ft_printlst.c
-OBJ			=	$(SRC:.c=.o)
-HEADER		=	libft.h
+OBJ_NAME	=	$(SRC_NAME:.c=.o)
+SRC			=	$(addprefix $(SRC_PATH), $(SRC_NAME))
+HEADER		=	./includes/
 CFLAGS		=	-Wall -Wextra -Werror
+NAME		=	libft.a
 
 all:	$(NAME)
 
-$(NAME): $(SRC)
-	gcc -c $(CFLAGS) $(SRC)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+$(NAME):
+	@gcc -c $(CFLAGS) $(SRC) -I$(HEADER)
+	@ar rc $(NAME) $(OBJ_NAME)
+	@ranlib $(NAME)
 
 clean:
-	rm -rf $(OBJ)
+	@rm -rf $(NAME) $(OBJ_NAME)
 
 fclean:	clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
