@@ -18,14 +18,13 @@ This library contains a makefile, with the following options:
 | `make` | creates .o files for each function as well as the main library file, libft.a |
 | `make libft.a` | same as make |
 | `make clean` | removes the .o files used to create the library |
-| `make clean` | removes the .o files used to create the library, as well as the libft.a library file |
+| `make fclean` | removes the .o files used to create the library, as well as the libft.a library file |
 | `make re` | removes all compilation files and remakes them |
 
 If you go ahead and run:
 
 ```
-make
-make clean
+make && make clean
 ```
 
 You should see a new libft.a file. Now you can use it anywhere by including the header in your .c file, like so:
