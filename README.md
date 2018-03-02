@@ -120,6 +120,7 @@ _Optional: creation and manipulation of linked lists_
 | **ft\_lstdel()** | The function ft\_lstdel() takes as a parameter the address of a pointer to a link and frees the memory of that link, and every successor of that link using the functions del and free. The last pointer is set to NULL.|
 | **ft\_lstadd()** | The ft\_lstadd() function adds the element new at the beginning of the list alst.|
 | **ft\_lstiter()** | The ft\_lstiter() function iterates through a list and applies the function f to each link in the list.|
+| **ft\_lstmap()** | The ft\_map() function iterates a list lst and applies the function f to each link to create a “fresh” list (using malloc(3)) resulting from the successive applications of f. If the allocation fails, the function returns NULL.|
 
 #### Part 4
 _Bonus: functions that I find useful that were not included in the assignment._
