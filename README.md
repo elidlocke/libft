@@ -136,7 +136,7 @@ _Bonus: functions that I find useful that were not included in the assignment._
 
 ## Credit
 
-Thanks to the following testing frameworks for helping me pass all the tests:
+Thanks to the following testing frameworks for providing me with rigorous testing for each of the functions in my library:
 - [Moulibft](https://www.moulibft.com/)
 - [Libft Unit Test](https://github.com/alelievr/libft-unit-test)
 - [Maintest](https://github.com/QuentinPerez/Maintest)
