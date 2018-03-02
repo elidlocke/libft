@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/28 10:25:29 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/01 10:42:14 by enennige         ###   ########.fr       */
+/*   Created: 2018/02/19 15:34:20 by enennige          #+#    #+#             */
+/*   Updated: 2018/03/02 09:21:12 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** The ft_lstiter() function iterates through a list and applies the function
-** f to each link in the list.
+** The ft_strlen() function computes the length of the string s.
 */
 
-void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+size_t	ft_strlen(const char *str)
 {
-	while (lst)
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		f(lst);
-		lst = lst->next;
+		i++;
 	}
+	return (i);
 }

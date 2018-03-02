@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printlst.c                                      :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/28 10:35:19 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/28 12:06:53 by enennige         ###   ########.fr       */
+/*   Created: 2018/02/28 10:04:35 by enennige          #+#    #+#             */
+/*   Updated: 2018/03/01 20:22:04 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** The function ft_printlst() takes a linked list and prints the parameter
-** content from each link in the list, assuming that the content is a string.
-** Each parameter is followed by a newline.
+** The ft_lstadd() function adds the element new at the beginning of the
+** list alst.
 */
 
-void	ft_printlst(t_list *list)
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-	while (list)
-	{
-		ft_putstr((char *)(list->content));
-		ft_putchar('\n');
-		list = list->next;
-	}
+	new->next = *alst;
+	*alst = new;
 }

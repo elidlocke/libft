@@ -1,35 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/23 17:30:12 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/01 11:29:32 by enennige         ###   ########.fr       */
+/*   Created: 2018/02/28 10:25:29 by enennige          #+#    #+#             */
+/*   Updated: 2018/03/01 20:50:05 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Allocates with malloc(3) and returns a fresh memory area. The memory
-** allocated is initialized to 0. If the allocation fails, the function
-** returns NULL.
-*/
-
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
-{
-	void		*ptr;
+/*
+** The ft_lstiter() function iterates through a list and applies the function
+** f to each link in the list.
+*/
 
-	if (size)
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+{
+	while (lst)
 	{
-		ptr = (void *)malloc(sizeof(*ptr) * (size));
-		if (ptr)
-		{
-			ft_memset(ptr, 0, size);
-			return (ptr);
-		}
+		f(lst);
+		lst = lst->next;
 	}
-	return (NULL);
 }

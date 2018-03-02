@@ -6,7 +6,7 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 13:31:14 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/01 10:13:12 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/01 18:51:39 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strmap(const char *s, char (*f)(char))
 	char	*new_str;
 	int		i;
 
-	if (s)
+	if (s && f)
 	{
 		new_str = (char *)malloc(sizeof(*new_str) * (ft_strlen(s) + 1));
 		if (new_str)

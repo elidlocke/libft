@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/23 09:33:52 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/01 10:33:03 by enennige         ###   ########.fr       */
+/*   Created: 2018/02/26 11:47:18 by enennige          #+#    #+#             */
+/*   Updated: 2018/03/01 18:51:21 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** The ft_putnbr() function outputs the integer n to the standard output
+** The ft_striteri() function applies the function f to each character of the
+** string passed as argument, and passing its index as first argument. Each
+** character is passed by address to f to be modified if necessary.
 */
 
-#include "libft.h"
-
-void	ft_putnbr(int n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	if (n == -2147483648)
-		ft_putstr("-2147483648");
-	else
+	int i;
+
+	if (s && f)
 	{
-		if (n < 0)
+		i = 0;
+		while (s[i] != '\0')
 		{
-			ft_putchar('-');
-			n = n * -1;
+			f(i, &s[i]);
+			i++;
 		}
-		if (n > 9)
-		{
-			ft_putnbr(n / 10);
-		}
-		ft_putchar((n % 10) + '0');
 	}
 }

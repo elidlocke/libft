@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/26 11:47:18 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/01 09:41:44 by enennige         ###   ########.fr       */
+/*   Created: 2018/02/23 17:30:12 by enennige          #+#    #+#             */
+/*   Updated: 2018/03/01 08:53:31 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** The ft_striteri() function applies the function f to each character of the
-** string passed as argument, and passing its index as first argument. Each
-** character is passed by address to f to be modified if necessary.
+** Allocates with malloc(3) and returns a fresh memory area. The memory
+** allocated is initialized to 0. If the allocation fails, the function
+** returns NULL.
 */
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
-{
-	int i;
+#include "libft.h"
 
-	if (s)
+void	*ft_memalloc(size_t size)
+{
+	void		*ptr;
+
+	if (size)
 	{
-		i = 0;
-		while (s[i] != '\0')
+		ptr = (void *)malloc(sizeof(*ptr) * (size));
+		if (ptr)
 		{
-			f(i, &s[i]);
-			i++;
+			ft_memset(ptr, 0, size);
+			return (ptr);
 		}
 	}
+	return (NULL);
 }

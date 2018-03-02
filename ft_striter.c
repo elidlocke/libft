@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/28 10:04:35 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/01 10:41:42 by enennige         ###   ########.fr       */
+/*   Created: 2018/02/26 10:16:12 by enennige          #+#    #+#             */
+/*   Updated: 2018/03/01 18:51:09 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
-** The ft_lstadd() function adds the element new at the beginning of the
-** list alst.
+** The ft_striter() function applies the function f to each character of the
+** string passed as argument. Each character is passed by address to f to be
+** modified if necessary.
 */
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void	ft_striter(char *s, void (*f) (char *))
 {
-	new->next = *alst;
-	*alst = new;
+	int i;
+
+	if (s && f)
+	{
+		i = 0;
+		while (s[i] != '\0')
+		{
+			f(&s[i]);
+			i++;
+		}
+	}
 }

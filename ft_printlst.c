@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   ft_printlst.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/26 10:16:12 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/01 09:41:04 by enennige         ###   ########.fr       */
+/*   Created: 2018/02/28 10:35:19 by enennige          #+#    #+#             */
+/*   Updated: 2018/03/01 20:18:36 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-** The ft_striter() function applies the function f to each character of the
-** string passed as argument. Each character is passed by address to f to be
-** modified if necessary.
+** The function ft_printlst() takes a linked list and prints the parameter
+** content from each link in the list, assuming that the content is a string.
+** Each parameter is followed by a newline.
 */
 
-void	ft_striter(char *s, void (*f) (char *))
+void	ft_printlst(t_list *list)
 {
-	int i;
-
-	if (s)
+	while (list)
 	{
-		i = 0;
-		while (s[i] != '\0')
-		{
-			f(&s[i]);
-			i++;
-		}
+		ft_putstr((char *)(list->content));
+		ft_putchar('\n');
+		list = list->next;
 	}
 }

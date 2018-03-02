@@ -6,7 +6,7 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 14:27:44 by enennige          #+#    #+#             */
-/*   Updated: 2018/02/27 17:53:32 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/01 18:51:54 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	char	*new_str;
 	int		i;
 
-	if (s)
+	if (s && f)
 	{
 		new_str = (char *)malloc(sizeof(*new_str) * (ft_strlen(s) + 1));
 		if (new_str)

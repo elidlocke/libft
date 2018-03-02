@@ -1,35 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/26 09:05:21 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/01 08:55:51 by enennige         ###   ########.fr       */
+/*   Created: 2018/02/23 09:33:52 by enennige          #+#    #+#             */
+/*   Updated: 2018/03/01 20:39:29 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
-** The function ft_strnew() allocates with malloc(3) and returns a fresh
-** string ending with '\0'. Each character of the string is initialized at
-** '\0'. If the allocation fails, the function returns NULL.
+** The ft_putnbr() function outputs the integer n to the standard output
 */
 
-char	*ft_strnew(size_t size)
-{
-	char	*str;
+#include "libft.h"
 
-	if (size)
+void	ft_putnbr(int n)
+{
+	if (n == -2147483648)
+		ft_putstr("-2147483648");
+	else
 	{
-		str = (char *)malloc(sizeof(*str) * (size + 1));
-		if (str)
+		if (n < 0)
 		{
-			ft_memset(str, '\0', (size + 1));
-			return (str);
+			ft_putchar('-');
+			n = n * -1;
 		}
+		if (n > 9)
+		{
+			ft_putnbr(n / 10);
+		}
+		ft_putchar((n % 10) + '0');
 	}
-	return (NULL);
 }
