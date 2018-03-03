@@ -36,7 +36,7 @@ include "libft.h"
 Don't forget to tell gcc what the path to your library is when you compile a file that is using it.  For example:
 
 ```
-gcc some_c_file.c -L/path_to_library_file/ -l/ft/
+gcc some_c_file.c -L<specify_path_to_library_file> -lft
 ```
 Note that -L takes the path to your library and -l takes the set of characters that come after lib in your library name.
 
