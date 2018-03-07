@@ -127,6 +127,8 @@ _Bonus: functions that I find useful that were not included in the assignment._
 | Function | Description |
 | --- | --- |
 | [**ft\_strrev()**](https://github.com/elidlocke/libft/blob/master/src/ft_strrev.c) | The function ft\_strrev() takes a string and the length of that string, and  reverses the string in place. Returns the reversed string.|
+| [**ft\_putstrarr()**](https://github.com/elidlocke/libft/blob/master/src/ft_putstrarr.c) | The function ft\_putstrarr() takes in an array of strings and prints each string, followed by a newline.|
+| [**ft\_putstrarr_fd()**](https://github.com/elidlocke/libft/blob/master/src/ft_putstrarr_fd.c) | The function ft\_putstrarr\_fd() takes in an array of strings and prints each string to the specified file descriptor, followed by a newline.|
 | [**ft\_iswhitespace()**](https://github.com/elidlocke/libft/blob/master/src/ft_iswhitespace.c) | The function ft\_iswhitespace() checks whether or not a character is considered a whitespace character, aka ' ', '\t', '\n', '\f', '\v' or '\r'|
 | [**ft\_makeabs()**](https://github.com/elidlocke/libft/blob/master/src/ft_makeabs.c) | The ft\_makeabs() function takes an integer and changes it to it's absolute value, while changing the sign variable that gets passed in (1 for positive or -1 for negative).|
 | [**ft\_countwords()**](https://github.com/elidlocke/libft/blob/master/src/ft_countwords.c) | The function ft\_countwords() takes a string and a delimiter and counts the number of words between the delimiters.|
