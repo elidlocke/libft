@@ -6,7 +6,7 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 14:58:39 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/02 09:24:09 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/07 13:22:22 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,8 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 char				*ft_strrev(char *str, int len);
+void				ft_putstrarr(char **str);
+void				ft_putstrarr_fd(char **str, int fd);
 int					ft_iswhitespace(char c);
 void				ft_makeabs(int *n, int *sign);
 int					ft_countwords(const char *str, char delim);
