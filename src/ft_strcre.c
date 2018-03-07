@@ -1,33 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstrarr.c                                     :+:      :+:    :+:   */
+/*   ft_strcre.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enennige <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/07 13:09:59 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/07 13:32:52 by enennige         ###   ########.fr       */
+/*   Created: 2018/03/07 13:33:09 by enennige          #+#    #+#             */
+/*   Updated: 2018/03/07 13:34:38 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
-** The function ft_putstrarr() takes in an array of strings and prints each
-** string, followed by a newline.
+** The function ft_strcre() loops through a string and replaces all instances
+** of ch1 with ch2.
 */
-
-void	ft_putstrarr(char **strarr)
+void	ft_strcre(char *str, char ch1, char ch2)
 {
-	size_t i;
-	if (strarr)
+	unsigned char *ptr;
+
+	ptr = (unsigned char *)str;
+	while (*ptr)
 	{
-		i = 0;
-		while (strarr[i] != NULL)
-		{
-			ft_putstr(strarr[i]);
-			ft_putchar('\n');
-			i++;
-		}
+		if (*ptr == ch1)
+			*ptr = ch2;
+		ptr++;
 	}
+	if (*ptr == ch1)
+		*ptr = ch2;
 }

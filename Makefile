@@ -6,7 +6,7 @@
 #    By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/21 17:45:07 by enennige          #+#    #+#              #
-#    Updated: 2018/03/07 13:20:03 by enennige         ###   ########.fr        #
+#    Updated: 2018/03/07 13:36:39 by enennige         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,6 +72,7 @@ SRC_NAME	=	ft_memset.c \
 				ft_strrev.c \
 				ft_putstrarr.c \
 				ft_putstrarr_fd.c \
+				ft_strcre.c \
 				ft_iswhitespace.c \
 				ft_makeabs.c \
 				ft_countwords.c \
