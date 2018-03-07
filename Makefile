@@ -6,7 +6,7 @@
 #    By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/21 17:45:07 by enennige          #+#    #+#              #
-#    Updated: 2018/03/07 13:36:39 by enennige         ###   ########.fr        #
+#    Updated: 2018/03/07 13:38:40 by enennige         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -93,7 +93,7 @@ $(NAME):
 	@ranlib $(NAME)
 
 clean:
-	@rm -rf $(NAME) $(OBJ_NAME)
+	@rm -rf $(OBJ_NAME)
 
 fclean:	clean
 	@rm -f $(NAME)
