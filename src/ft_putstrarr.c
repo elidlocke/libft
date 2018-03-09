@@ -6,7 +6,7 @@
 /*   By: enennige <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/07 13:09:59 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/07 13:32:52 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/09 15:24:49 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 void	ft_putstrarr(char **strarr)
 {
 	size_t i;
+
 	if (strarr)
 	{
 		i = 0;
