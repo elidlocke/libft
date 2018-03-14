@@ -135,6 +135,7 @@ _Bonus: functions that I find useful that were not included in the assignment._
 | [**ft\_getword()**](https://github.com/elidlocke/libft/blob/master/src/ft_getword.c) | The ft\_getword() function takes a string and a delimiter and returns a string with the letters between the start point of the string and the next delimiter.|
 | [**ft\_gotonextword()**](https://github.com/elidlocke/libft/blob/master/src/ft_gotonextword.c) | The ft\_gotonextword() function takes a pointer to a string and moves the pointer forward to the next point that is past the next delimiter. if there is no more words in the string, the pointer is moved to the end of the string.|
 | [**ft\_printlst()**](https://github.com/elidlocke/libft/blob/master/src/ft_printlst.c) | The function ft\_printlst() takes a linked list and prints the parameter content from each link in the list, assuming that the content is a string. Each parameter is followed by a newline.|
+| [**ft\_realloc()**](https://github.com/elidlocke/libft/blob/master/src/ft_realloc.c) | The function ft\_realloc() creates a new string of the size passed in and copies the old data into the new string.|
 
 ## Credit
 

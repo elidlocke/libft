@@ -6,7 +6,7 @@
 #    By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/21 17:45:07 by enennige          #+#    #+#              #
-#    Updated: 2018/03/07 13:38:40 by enennige         ###   ########.fr        #
+#    Updated: 2018/03/13 19:14:53 by enennige         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,7 +78,8 @@ SRC_NAME	=	ft_memset.c \
 				ft_countwords.c \
 				ft_getword.c \
 				ft_gotonextword.c \
-				ft_printlst.c
+				ft_printlst.c \
+				ft_realloc.c
 OBJ_NAME	=	$(SRC_NAME:.c=.o)
 SRC			=	$(addprefix $(SRC_PATH), $(SRC_NAME))
 HEADER		=	./includes/

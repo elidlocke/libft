@@ -6,7 +6,7 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 14:58:39 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/07 13:35:43 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/13 19:45:30 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,4 +95,5 @@ int					ft_countwords(const char *str, char delim);
 char				*ft_getword(const char *s, char delim);
 void				ft_gotonextword(char **pstr, char delim);
 void				ft_printlst(t_list *list);
+char				*ft_realloc(void *ptr, size_t size);
 #endif
