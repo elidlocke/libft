@@ -6,7 +6,7 @@
 /*   By: enennige <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/13 18:40:19 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/13 19:59:23 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/14 09:58:10 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,19 @@ char	*ft_realloc(void *ptr, size_t size)
 {
 	char *new;
 
-	if (ptr)
+	if (!ptr)
+		return (NULL);
+	if (!size && ptr)
 	{
-		new = (char *)malloc(sizeof(size));
-		if (new)
-		{
-			ft_memcpy(new, ptr, size);
-			free(ptr);
-			ptr = new;
-		}
+		if (!(new = (char *)malloc(1)))
+			return (NULL);
+		ft_memdel(&ptr);
+		return (new);
 	}
-	return (ptr);
+	new = (char *)malloc(sizeof(size));
+	if (!new)
+		return (NULL);
+	ft_memcpy(new, ptr, size);
+	free(ptr);
+	return (new);
 }
