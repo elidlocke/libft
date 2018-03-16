@@ -6,7 +6,7 @@
 #    By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/21 17:45:07 by enennige          #+#    #+#              #
-#    Updated: 2018/03/13 19:14:53 by enennige         ###   ########.fr        #
+#    Updated: 2018/03/16 11:27:56 by enennige         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRC_NAME	=	ft_memset.c \
 				ft_memcmp.c \
 				ft_strlen.c \
 				ft_strdup.c \
+				ft_strndup.c \
 				ft_strcpy.c \
 				ft_strncpy.c \
 				ft_strcat.c \
