@@ -6,15 +6,15 @@
 /*   By: enennige <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/16 11:14:28 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/16 11:27:17 by enennige         ###   ########.fr       */
+/*   Updated: 2018/03/17 10:25:26 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** The ft_strdup() function allocates sufficient memory to copy n bytes of the
 ** string s1, does the copy, and returns a pointer to it. s1 will always be NUL
-** terminated. The pointer may subsequently be used as an argument to the function
-** free(3). If insufficient memory is available, NULL is returned.
+** terminated. The pointer may subsequently be used as an argument to the
+** function free(3). If insufficient memory is available, NULL is returned.
 */
 
 #include "libft.h"
