@@ -6,7 +6,7 @@
 #    By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/21 17:45:07 by enennige          #+#    #+#              #
-#    Updated: 2018/03/16 11:27:56 by enennige         ###   ########.fr        #
+#    Updated: 2018/04/05 11:12:17 by enennige         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,6 +56,7 @@ SRC_NAME	=	ft_memset.c \
 				ft_strtrim.c \
 				ft_strsplit.c \
 				ft_itoa.c \
+				ft_itoabase.c \
 				ft_putchar.c \
 				ft_putstr.c \
 				ft_putendl.c \

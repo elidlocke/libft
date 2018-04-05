@@ -6,7 +6,7 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 14:58:39 by enennige          #+#    #+#             */
-/*   Updated: 2018/03/16 11:28:38 by enennige         ###   ########.fr       */
+/*   Updated: 2018/04/05 11:12:48 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ char				*ft_strjoin(const char *s1, const char *s2);
 char				*ft_strtrim(const char *s);
 char				**ft_strsplit(const char *s, char c);
 char				*ft_itoa(int n);
+char				*ft_itoabase(int n, int base);
 void				ft_putchar(char c);
 void				ft_putstr(const char *s);
 void				ft_putendl(const char *s);
