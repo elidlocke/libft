@@ -6,7 +6,7 @@
 #    By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/21 17:45:07 by enennige          #+#    #+#              #
-#    Updated: 2018/04/05 11:12:17 by enennige         ###   ########.fr        #
+#    Updated: 2018/05/13 11:38:10 by enennige         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,7 +81,8 @@ SRC_NAME	=	ft_memset.c \
 				ft_getword.c \
 				ft_gotonextword.c \
 				ft_printlst.c \
-				ft_realloc.c
+				ft_realloc.c \
+				ft_getnextline.c
 OBJ_NAME	=	$(SRC_NAME:.c=.o)
 SRC			=	$(addprefix $(SRC_PATH), $(SRC_NAME))
 HEADER		=	./includes/
@@ -91,14 +92,20 @@ NAME		=	libft.a
 all:	$(NAME)
 
 $(NAME):
-	@gcc -c $(CFLAGS) $(SRC) -I$(HEADER)
-	@ar rc $(NAME) $(OBJ_NAME)
-	@ranlib $(NAME)
+	@tput setaf 2
+	gcc -c $(CFLAGS) $(SRC) -I$(HEADER)
+	ar rc $(NAME) $(OBJ_NAME)
+	ranlib $(NAME)
+	@tput sgr0
 
 clean:
-	@rm -rf $(OBJ_NAME)
+	@tput setaf 1
+	rm -rf $(OBJ_NAME)
+	@tput sgr0
 
 fclean:	clean
-	@rm -f $(NAME)
+	@tput setaf 1
+	rm -f $(NAME)
+	@tput sgr0
 
 re: fclean all

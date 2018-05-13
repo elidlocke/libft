@@ -138,6 +138,8 @@ _Bonus: functions that I find useful that were not included in the assignment._
 | [**ft\_printlst()**](https://github.com/elidlocke/libft/blob/master/src/ft_printlst.c) | The function ft\_printlst() takes a linked list and prints the parameter content from each link in the list, assuming that the content is a string. Each parameter is followed by a newline.|
 | [**ft\_realloc()**](https://github.com/elidlocke/libft/blob/master/src/ft_realloc.c) | The function ft\_realloc() creates a new string of the size passed in and copies the old data into the new string.|
 
+| [**ft\_getnextline()**](https://github.com/elidlocke/libft/blob/master/src/ft_getnextline.c) | The function ft\_getnextline() gets the next line from an open file. Returns 1, 0 or -1 depending on whether a line has been read, when the reading has been completed, or if an error has happened respectively.|
+
 ## Credit
 
 Thanks to the following testing frameworks for providing me with rigorous testing for each of the functions in my library:
