@@ -6,7 +6,7 @@
 #    By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/21 17:45:07 by enennige          #+#    #+#              #
-#    Updated: 2018/05/13 11:38:10 by enennige         ###   ########.fr        #
+#    Updated: 2018/06/02 11:50:49 by enennige         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,7 +82,11 @@ SRC_NAME	=	ft_memset.c \
 				ft_gotonextword.c \
 				ft_printlst.c \
 				ft_realloc.c \
-				ft_getnextline.c
+				ft_getnextline.c \
+				ft_sort_bubble.c \
+				ft_sort_selection.c \
+				ft_sort_insertion.c \
+				ft_sort_merge.c
 OBJ_NAME	=	$(SRC_NAME:.c=.o)
 SRC			=	$(addprefix $(SRC_PATH), $(SRC_NAME))
 HEADER		=	./includes/

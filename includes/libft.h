@@ -6,7 +6,7 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 14:58:39 by enennige          #+#    #+#             */
-/*   Updated: 2018/05/13 11:37:04 by enennige         ###   ########.fr       */
+/*   Updated: 2018/06/02 11:52:20 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,4 +99,9 @@ void				ft_gotonextword(char **pstr, char delim);
 void				ft_printlst(t_list *list);
 char				*ft_realloc(void *ptr, size_t size);
 int					ft_getnextline(const int fd, char **line);
+
+void				ft_sort_bubble(int *nums, int len);
+void				ft_sort_insertion(int *nums, int len);
+void				ft_sort_selection(int *nums, int len);
+void				ft_sort_merge(int *nums, int len);
 #endif

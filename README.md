@@ -138,7 +138,11 @@ _Bonus: functions that I find useful that were not included in the assignment._
 | [**ft\_printlst()**](https://github.com/elidlocke/libft/blob/master/src/ft_printlst.c) | The function ft\_printlst() takes a linked list and prints the parameter content from each link in the list, assuming that the content is a string. Each parameter is followed by a newline.|
 | [**ft\_realloc()**](https://github.com/elidlocke/libft/blob/master/src/ft_realloc.c) | The function ft\_realloc() creates a new string of the size passed in and copies the old data into the new string.|
 | [**ft\_getnextline()**](https://github.com/elidlocke/libft/blob/master/src/ft_getnextline.c) | The function ft\_getnextline() gets the next line from an open file. Returns 1, 0 or -1 depending on whether a line has been read, when the reading has been completed, or if an error has happened respectively.|
-
+| [**ft\_sort\_bubble()**](https://github.com/elidlocke/libft/blob/master/src/ft_sort_bubble.c) | The function ft\_sort\_bubble() iterates through a list and sorts it by swapping out of order elements on each iteration. Runs in O(n^2) time.|
+| [**ft\_sort\_insertion()**](https://github.com/elidlocke/libft/blob/master/src/ft_sort_insertion.c) | ft\_sort\_insertion() takes each item in the list and iterates through the sorted portion of the list to place it in the correct location. Runtime is O(n^2).|
+| [**ft\_sort\_selection()**](https://github.com/elidlocke/libft/blob/master/src/ft_sort_selection.c) | ft\_sort\_selection() takes an array of ints, and iterates through the array, finding the next biggest number and adding it to the sorted part of the list. Runtime is O(n^2).|
+| [**ft\_sort\_merge()**](https://github.com/elidlocke/libft/blob/master/src/ft_sort_selection.c) | ft\_sort\_merge() takes a list of integers and the length of the array and then sorts the numbers recursively by diving and conquering.  Runtime is nlog(n) time. |
+ 
 ## Credit
 
 Thanks to the following testing frameworks for providing me with rigorous testing for each of the functions in my library:
