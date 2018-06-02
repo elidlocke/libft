@@ -154,5 +154,3 @@ Thanks to the following testing frameworks for providing me with rigorous testin
 ## Disclaimer
 
 This is a project that was done for learning purposes only. This is not meant to be used as a replacement for the [GNU C Library](https://www.gnu.org/software/libc/).
-
-If you are currently a 42 Student, feel free to look at my functions, but watch out for file structure. I cleaned up the file structure with a src and includes folder after the assignment was graded.
