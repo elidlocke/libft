@@ -141,7 +141,7 @@ _Bonus: functions that I find useful that were not included in the assignment._
 | [**ft\_sort\_bubble()**](https://github.com/elidlocke/libft/blob/master/src/ft_sort_bubble.c) | The function ft\_sort\_bubble() iterates through a list and sorts it by swapping out of order elements on each iteration. Runs in O(n^2) time.|
 | [**ft\_sort\_insertion()**](https://github.com/elidlocke/libft/blob/master/src/ft_sort_insertion.c) | ft\_sort\_insertion() takes each item in the list and iterates through the sorted portion of the list to place it in the correct location. Runtime is O(n^2).|
 | [**ft\_sort\_selection()**](https://github.com/elidlocke/libft/blob/master/src/ft_sort_selection.c) | ft\_sort\_selection() takes an array of ints, and iterates through the array, finding the next biggest number and adding it to the sorted part of the list. Runtime is O(n^2).|
-| [**ft\_sort\_merge()**](https://github.com/elidlocke/libft/blob/master/src/ft_sort_selection.c) | ft\_sort\_merge() takes a list of integers and the length of the array and then sorts the numbers recursively by diving and conquering.  Runtime is nlog(n) time. |
+| [**ft\_sort\_merge()**](https://github.com/elidlocke/libft/blob/master/src/ft_sort_merge.c) | ft\_sort\_merge() takes a list of integers and the length of the array and then sorts the numbers recursively by diving and conquering.  Runtime is nlog(n) time. |
  
 ## Credit
 
