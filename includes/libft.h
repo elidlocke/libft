@@ -6,7 +6,7 @@
 /*   By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 14:58:39 by enennige          #+#    #+#             */
-/*   Updated: 2018/06/02 11:52:20 by enennige         ###   ########.fr       */
+/*   Updated: 2018/06/04 16:10:11 by enennige         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ char				*ft_strnstr(const char *haystack,
 								const char *needle, size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
+void				ft_addnfix(char **str, char fix_char, int len, int side);
 int					ft_atoi(const char *str);
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
@@ -99,6 +100,7 @@ void				ft_gotonextword(char **pstr, char delim);
 void				ft_printlst(t_list *list);
 char				*ft_realloc(void *ptr, size_t size);
 int					ft_getnextline(const int fd, char **line);
+int					ft_readline(const int fd, char **line);
 
 void				ft_sort_bubble(int *nums, int len);
 void				ft_sort_insertion(int *nums, int len);

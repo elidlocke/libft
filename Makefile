@@ -6,7 +6,7 @@
 #    By: enennige <enennige@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/21 17:45:07 by enennige          #+#    #+#              #
-#    Updated: 2018/06/02 11:50:49 by enennige         ###   ########.fr        #
+#    Updated: 2018/06/04 16:12:00 by enennige         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ SRC_NAME	=	ft_memset.c \
 				ft_strnstr.c \
 				ft_strcmp.c \
 				ft_strncmp.c \
+				ft_addnfix.c \
 				ft_atoi.c \
 				ft_isalpha.c \
 				ft_isdigit.c \
@@ -83,6 +84,7 @@ SRC_NAME	=	ft_memset.c \
 				ft_printlst.c \
 				ft_realloc.c \
 				ft_getnextline.c \
+				ft_readline.c \
 				ft_sort_bubble.c \
 				ft_sort_selection.c \
 				ft_sort_insertion.c \
